@@ -1,0 +1,73 @@
+# Resume Parser
+
+This project parses a resume from a DOCX file and extracts various sections such as Name, Contact Information, Summary, Experience, Education, Skills, Certifications, Projects, Co-Curricular Activities, and Languages.
+
+## Files
+
+- `Dummy.docx`: A sample resume file used for testing.
+- `parse_resume.py`: The Python script that parses the resume and generates a summary.
+- `README.md`: This file with instructions.
+
+## Requirements
+
+- Python 3.x
+- `python-docx` library
+
+## Installation
+
+1. Clone the repository or download the files to your local machine.
+2. Install the `python-docx` library if you haven't already:
+    ```sh
+    pip install python-docx
+    ```
+
+## Usage
+
+1. Ensure you have `Dummy.docx` and `parse_resume.py` in the same directory.
+2. Run the Python script:
+    ```sh
+    python parse_resume.py
+    ```
+3. The script will parse the resume and print the extracted data in JSON format, followed by a short summary.
+
+## Sample Output
+
+```json
+{
+    "Name": "Priyanshu Sharma",
+    "Contact Information": {
+        "Phone": "+91-8580566854",
+        "Email": "sharmapriyanshu2278@gmail.com"
+    },
+    "Summary": "Motivated software developer with experience in machine learning, deep learning, and image processing.",
+    "Experience": [
+        "Python & Java Developer Trainee\nLTI Mindtree\nJune 2024 - Present\n• Participating in intensive technical training sessions focused on Python and Java programming.\n• Committed to continuous learning and professional development through live sessions and self-paced modules.\n• Utilized object-oriented programming in Python to create efficient and maintainable solutions.\nLearning Outcomes: Java, Python, SQL",
+        "Summer training and Internship\nTraining on Python from E-Box\nJune 2023 – July 2023\n• Worked on data analysis and modeling projects using Python.\n• Developed predictive models and performed statistical analysis on large datasets.\n• Collaborated with cross-functional teams to implement data-driven solutions.\nLearning Outcomes: Python"
+    ],
+    "Education": [
+        "Lovely Professional University\nPhagwara, Punjab\nMaster of Technology – Artificial Intelligence and Machine Learning; CGPA: 7.98\nSince August 2023",
+        "Lovely Professional University\nPhagwara, Punjab\nBachelor of Technology – Computer Science and Engineering; CGPA: 7.3\nAug 2019 - May 2023"
+    ],
+    "Skills": [
+        "Languages: Python, C++, C, SQL, Java",
+        "Data Analysis: Pandas, Numpy, Matplotlib, Seaborn",
+        "Domain: Machine Learning, NLP, Deep Learning, Image Processing",
+        "Soft Skills: Decision Making, Communication, Team Work, Active Listening, Adaptability"
+    ],
+    "Certifications": [
+        "Deep Learning | NPTEL | Jan 2024 – Apr 2024",
+        "Computer Vision and Image Processing | NPTEL | Jan 2024 – Apr 2024"
+    ],
+    "Projects": [
+        "Medical Report Evaluation\nMay 2024\nDomain: Text Classification | Machine Learning | Hospitality industry\n• Aimed to improve overall service quality and customer satisfaction by leveraging automated review analysis for informed decision-making.\n• Utilized NLP and deep learning techniques to categorize hotel reviews into positive, negative, or neutral sentiments.\n• Developed a model to automatically classify reviews, providing actionable insights for hotel managers to enhance customer satisfaction and service quality.",
+        "Peach Quality Detection\nFeb 2024\nDomain: Computer Vision | Image Processing\n• Identified the various types of disease through leaf of apple.\n• Applied image processing methods to rectify different saturation intensity effects in image.\n• Used batch normalization through which patterns are generated.",
+        "Stroke Prediction\nDec 2023\nDomain: Machine Learning | Healthcare\n• Developed and implemented a machine learning model using Python.\n• Applied advanced techniques in data preprocessing, feature selection, and model training to enhance accuracy.\n• Tested model rigorously, achieving 95% efficacy, potentially enhancing patient outcomes significantly."
+    ],
+    "Co-Curricular Activities": [
+        "250+ Questions Solved | Leetcode",
+        "4 Star Coder | Python, C++ | HackerRank"
+    ],
+    "Languages": [
+        "English, Hindi"
+    ]
+}
